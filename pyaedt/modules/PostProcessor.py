@@ -1086,7 +1086,8 @@ class PostProcessorCommon(object):
             )
             self.logger.info("Solution Data Correctly Loaded.")
             return SolutionData(data)
-        except:
+        except Exception as e:
+            print(e)
             self.logger.warning("Solution Data failed to load. Check solution, context or expression.")
             return None
 

@@ -3536,6 +3536,7 @@ class GeometryModeler(Modeler, object):
             unclassified_before = list(self.unclassified_names)
             szSelections = self.convert_to_selections(theList)
             szSelections_list = szSelections.split(",")
+            print(szSelections_list)
             vArg1 = ["NAME:Selections", "Selections:=", szSelections]
 
             self.oeditor.Connect(vArg1)
